@@ -22,6 +22,8 @@
   },
   "jspm": {
     "dependencies": {
+      "css": "github:systemjs/plugin-css@^0.1.20",
+      "font-awesome": "npm:font-awesome@^4.5.0",
       "radium": "npm:radium@^0.15.3",
       "react": "npm:react@^0.14.5",
       "react-dom": "npm:react-dom@^0.14.5"
@@ -29,6 +31,7 @@
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
       "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "clean-css": "npm:clean-css@^3.4.8",
       "core-js": "npm:core-js@^1.1.4"
     }
   },

@@ -16,7 +16,7 @@ gulp.task('scripts', () => {
 		.bundleSFX(paths.main, paths.dest, 
 			{ 
 				minify: false,
-				mangle: false,
+				mangl1qe: false,
 				lowResSourceMaps: false,
 				sourceMaps: true
 			})

@@ -1,5 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Header from './Components/Header/Header';
 
-ReactDOM.render (<App />, document.getElementById('main'));
+import 'font-awesome/css/font-awesome.min.css!';
+import "../stylesheets/style.css!";
+
+class Main extends React.Component {
+	constructor () {
+		super();
+	}
+	render () {
+		return (
+			<div>
+				<Header />
+			</div>
+		);
+	}
+}
+
+ReactDOM.render (<Main />, document.getElementById('main'));

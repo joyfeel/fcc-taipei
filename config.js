@@ -17,7 +17,10 @@ System.config({
   map: {
     "babel": "npm:babel-core@5.8.34",
     "babel-runtime": "npm:babel-runtime@5.8.34",
+    "clean-css": "npm:clean-css@3.4.8",
     "core-js": "npm:core-js@1.2.6",
+    "css": "github:systemjs/plugin-css@0.1.20",
+    "font-awesome": "npm:font-awesome@4.5.0",
     "radium": "npm:radium@0.15.3",
     "react": "npm:react@0.14.5",
     "react-dom": "npm:react-dom@0.14.5",
@@ -338,11 +341,32 @@ System.config({
       "stream": "github:jspm/nodelibs-stream@0.1.0",
       "string_decoder": "github:jspm/nodelibs-string_decoder@0.1.0"
     },
+    "npm:clean-css@3.4.8": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "commander": "npm:commander@2.8.1",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "http": "github:jspm/nodelibs-http@1.7.1",
+      "https": "github:jspm/nodelibs-https@0.1.0",
+      "os": "github:jspm/nodelibs-os@0.1.0",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "source-map": "npm:source-map@0.4.4",
+      "url": "github:jspm/nodelibs-url@0.1.0",
+      "util": "github:jspm/nodelibs-util@0.1.0"
+    },
     "npm:combined-stream@1.0.5": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "delayed-stream": "npm:delayed-stream@1.0.0",
       "stream": "github:jspm/nodelibs-stream@0.1.0",
       "util": "github:jspm/nodelibs-util@0.1.0"
+    },
+    "npm:commander@2.8.1": {
+      "child_process": "github:jspm/nodelibs-child_process@0.1.0",
+      "events": "github:jspm/nodelibs-events@0.1.1",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "graceful-readlink": "npm:graceful-readlink@1.0.1",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:commander@2.9.0": {
       "child_process": "github:jspm/nodelibs-child_process@0.1.0",
@@ -491,6 +515,9 @@ System.config({
       "randomatic": "npm:randomatic@1.1.5",
       "repeat-element": "npm:repeat-element@1.1.2",
       "repeat-string": "npm:repeat-string@1.5.2"
+    },
+    "npm:font-awesome@4.5.0": {
+      "css": "github:systemjs/plugin-css@0.1.20"
     },
     "npm:for-own@0.1.3": {
       "for-in": "npm:for-in@0.1.4"
@@ -1120,6 +1147,10 @@ System.config({
       "amdefine": "npm:amdefine@1.0.0",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:source-map@0.4.4": {
+      "amdefine": "npm:amdefine@1.0.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:source-map@0.5.3": {
