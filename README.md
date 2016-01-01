@@ -1,4 +1,4 @@
-# ptt-web-study
+# :sparkles: fcc-taipei
 
 ## Prerequisite
 * [nvm](https://github.com/creationix/nvm) node version > 0.12
