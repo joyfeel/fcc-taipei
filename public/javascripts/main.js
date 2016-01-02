@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './Components/Header/Header';
+import Header from './components/Header/Header';
 
 import 'font-awesome/css/font-awesome.min.css!';
-import "../stylesheets/style.css!";
+//import "../stylesheets/style.css!";
 
 class Main extends React.Component {
 	constructor () {
