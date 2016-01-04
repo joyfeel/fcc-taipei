@@ -1,17 +1,19 @@
-const jspm = require('jspm');
-const gulp = require('gulp');
-const sass = require('gulp-sass');
-const sourcemaps = require('gulp-sourcemaps');
+const jspm = require('jspm'),
+	gulp = require('gulp'),
+	sass = require('gulp-sass'),
+	sourcemaps = require('gulp-sourcemaps'),
+	colors = require('colors/safe'),
+	changed = require('gulp-changed');
 
 // JSPM-cli api [https://github.com/jspm/jspm-cli/blob/master/docs/api.md]
 
 const PATH = {
-	scripts: 'public/javascripts/**',
-	scssScripts: 'public/stylesheets/**/*.scss',
+	jsFiles: 'public/javascripts/**/*.js',
+	scssFiles: 'public/stylesheets/**/*.scss',
   	jsSrc: 'public/javascripts/main',
   	jsDest: 'public/dest/bundle.js',
-  	scss: 'public/stylesheets/main.scss',
-  	cssDest: 'public/dest/'
+  	scssSrc: 'public/stylesheets/main.scss',
+  	scssDest: 'public/dest/'
 };
 
 jspm.setPackagePath('.');
@@ -26,29 +28,27 @@ gulp.task('scripts', () => {
 				sourceMaps: true
 			})
 		.then(() => {
-			//console.log('Finished')
 		});
 });
 
-gulp.task('watch', () => {
-	gulp.watch([PATH.scripts], ['scripts']).on('change', (event) => {
-		console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
-  		return;
-	});
-
-	gulp.watch([PATH.scssScripts], ['sass']).on('change', (event) => {
-		console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
-  		return;
-	});
-});
-
 gulp.task('sass', () => {
-	return gulp.src(PATH.scss)
+	return gulp.src(PATH.scssSrc)
 		.pipe(sourcemaps.init())
 		.pipe(sass().on('error', sass.logError))
 		.pipe(sourcemaps.write())
-		//.pipe(sass())
-		.pipe(gulp.dest(PATH.cssDest));
+		.pipe(gulp.dest(PATH.scssDest));
+});
+
+gulp.task('watch', () => {
+	gulp.watch(PATH.jsFiles, ['scripts']).on('change', (event) => {
+		console.log(colors.cyan('File ' + event.path + ' was ' + event.type + ', running tasks...'));
+  		return;
+	});
+
+	gulp.watch(PATH.scssFiles, ['sass', 'scripts']).on('change', (event) => {
+		console.log(colors.magenta('File ' + event.path + ' was ' + event.type + ', running tasks...'));
+  		return;
+	});
 });
 
 gulp.task('default', ['watch', 'scripts', 'sass']);
