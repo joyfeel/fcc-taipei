@@ -1,3 +1,4 @@
+
 const jspm = require('jspm'),
 	gulp = require('gulp'),
 	sass = require('gulp-sass'),
@@ -45,7 +46,7 @@ gulp.task('watch', () => {
   		return;
 	});
 
-	gulp.watch(PATH.scssFiles, ['sass', 'scripts']).on('change', (event) => {
+	gulp.watch(PATH.scssFiles, ['sass']).on('change', (event) => {
 		console.log(colors.magenta('File ' + event.path + ' was ' + event.type + ', running tasks...'));
   		return;
 	});

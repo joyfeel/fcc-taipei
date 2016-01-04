@@ -4,7 +4,7 @@ import Header from './components/Header/Header';
 
 import 'font-awesome/css/font-awesome.min.css!';
 //import "../stylesheets/style.css!";
-import '../dest/main.css!';
+//import '../dest/main.css!';
 
 class Main extends React.Component {
 	constructor () {
