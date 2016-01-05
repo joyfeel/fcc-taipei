@@ -12558,17 +12558,9 @@ $__System.register('c2', ['46', 'e', '1a', '1d', '1e', 'c1'], function (_export)
 					value: function render() {
 						return React.createElement(
 							'div',
-							{ className: 'navtest', onClick: this.toggleIsOpen },
-							React.createElement(
-								'div',
-								null,
-								this.props.children[0]
-							),
-							React.createElement(
-								'div',
-								null,
-								this.state.isShow ? this.props.children[1] : null
-							)
+							{ onClick: this.toggleIsOpen },
+							this.props.children[0],
+							this.state.isShow ? this.props.children[1] : null
 						);
 					}
 				}]);
@@ -12623,7 +12615,7 @@ $__System.register('c3', ['46', 'e', '1a', '1d', '1e', 'c1', 'c2'], function (_e
 							null,
 							React.createElement(
 								'div',
-								null,
+								{ className: 'fcc-link' },
 								React.createElement(
 									'i',
 									{ className: 'material-icons ts' },
@@ -12637,13 +12629,13 @@ $__System.register('c3', ['46', 'e', '1a', '1d', '1e', 'c1', 'c2'], function (_e
 							),
 							React.createElement(
 								'div',
-								null,
+								{ className: 'fcc-list' },
 								React.createElement(
 									'ul',
-									null,
+									{ className: 'fcc-account-menu' },
 									React.createElement(
 										'li',
-										{ className: 'ts' },
+										{ className: 'ts on h-expand' },
 										React.createElement(
 											'i',
 											{ className: 'material-icons' },
@@ -12653,7 +12645,7 @@ $__System.register('c3', ['46', 'e', '1a', '1d', '1e', 'c1', 'c2'], function (_e
 									),
 									React.createElement(
 										'li',
-										{ className: 'ts' },
+										{ className: 'ts on h-expand' },
 										React.createElement(
 											'i',
 											{ className: 'material-icons' },
@@ -12663,7 +12655,7 @@ $__System.register('c3', ['46', 'e', '1a', '1d', '1e', 'c1', 'c2'], function (_e
 									),
 									React.createElement(
 										'li',
-										{ className: 'ts' },
+										{ className: 'ts on h-expand' },
 										React.createElement(
 											'i',
 											{ className: 'material-icons' },
@@ -12694,11 +12686,7 @@ $__System.register('c3', ['46', 'e', '1a', '1d', '1e', 'c1', 'c2'], function (_e
 										'Taipei'
 									)
 								),
-								React.createElement(
-									'div',
-									null,
-									this.renderHeaderUser()
-								)
+								this.renderHeaderUser()
 							)
 						);
 					}

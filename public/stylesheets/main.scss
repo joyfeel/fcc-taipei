@@ -1,2 +1,26 @@
-@import 
-	'components/components';
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import
+  'utils/variables';
+
+// 2. Vendors
+@import
+  'vendor/normalize';
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/reset';
+
+// 4. Layout-related sections
+
+
+// 5. Components
+@import
+  'components/components';
+
+// 6. Page-specific styles
+
+
+// 7. Themes

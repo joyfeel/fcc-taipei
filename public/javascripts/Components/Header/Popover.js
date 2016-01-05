@@ -39,13 +39,9 @@ class Popover extends React.Component {
 	}
 	render () {
 		return (
-			<div className='navtest' onClick={this.toggleIsOpen}>
-				<div>
+			<div onClick={this.toggleIsOpen}>
 					{this.props.children[0]}
-				</div>
-				<div>
 					{this.state.isShow ? this.props.children[1] : null}
-				</div>
 			</div>
 		);
 	}

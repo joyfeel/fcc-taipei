@@ -10,21 +10,21 @@ class Header extends React.Component {
 	renderHeaderUser () {
 		return (
 			<Popover>
-				<div>
+				<div className='fcc-link'>
 					<i className='material-icons ts'>account_circle</i>
 					<h2 className='fcc-username'>username</h2>
 				</div>
-				<div>
-					<ul>
-						<li className='ts'>
+				<div className='fcc-list'>
+					<ul className='fcc-account-menu'>
+						<li className='ts on h-expand'>
 							<i className='material-icons'>accessibility</i>
 							log-in
 						</li>
-			        	<li className="ts">
+			        	<li className="ts on h-expand">
 	      					<i className="material-icons">accessibility</i>
 	      					item-2
 	    				</li>
-	    				<li className="ts">
+	    				<li className="ts on h-expand">
 	      					<i className="material-icons">accessibility</i>
 	      					itme-3
 	    				</li>						
@@ -43,9 +43,7 @@ class Header extends React.Component {
           					Taipei
 						</a>
 					</h1>
-					<div>
-						{this.renderHeaderUser()}
-					</div>
+					{this.renderHeaderUser()}
 				</div>
 			</header>
 		);
