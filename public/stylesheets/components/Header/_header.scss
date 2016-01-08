@@ -30,6 +30,18 @@ header {
   }
 }
 
+@media (max-width: 768px) {
+  .fcc-panel > .fcc-logo > a{font-size: 16px;}
+  .fcc-panel > .material-icons {margin-right: 3%;}
+}
+
+@media (max-width: 650px) {.fcc-panel > .fcc-username {display: none;}}
+
+@media (max-width: 399px) {
+  .fcc-panel > .fcc-logo img {width: 200px;}
+  .fcc-panel > .fcc-logo > a{font-size: 12px;}
+}
+
 
 
 

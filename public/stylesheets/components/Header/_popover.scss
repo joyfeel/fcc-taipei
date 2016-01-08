@@ -62,6 +62,12 @@
 }
 
 
+@media (max-width: 768px) {
+  .fcc-popover .fcc-account-menu {width: 100%; right: 0; border-radius: 0;}
+}
+
+
+
 
 /*
 .fcc-panel > .material-icons {
