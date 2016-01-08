@@ -7,7 +7,6 @@
   cursor: pointer;
 }
 
-
 .fcc-popover > .fcc-username {
   margin: 5px 10px 0 0;
   float: right;
@@ -34,7 +33,6 @@
   color: #DDC9A1;
 }
 
-
 .fcc-popover .fcc-account-menu > li:hover,
 .fcc-popover .fcc-account-menu > li.active {
   border-color: #DDC9A1;
@@ -50,88 +48,13 @@
   border-radius: 0 0 4px 4px;
 }
 
-
-
 .fcc-popover .fcc-account-menu > li.h-expand {height: 42px;}
-
 .fcc-popover .fcc-account-menu > li:last-child {border: 0;}
-
 .fcc-account-menu .material-icons {
   vertical-align: -5px;
   padding-right: 7px;
 }
-
 
 @media (max-width: 768px) {
   .fcc-popover .fcc-account-menu {width: 100%; right: 0; border-radius: 0;}
 }
-
-
-
-
-/*
-.fcc-panel > .material-icons {
-  display: inline-block;
-  float: right;
-  margin: 10px 60px 0 0;
-  color: #fff;
-  font-size: 35px;
-  cursor: pointer;
-}
-
-
-.fcc-panel > .fcc-username {
-  margin: 5px 10px 0 0;
-  float: right;
-  font-size: 18px;
-  color: #fff;
-  font-weight: 200;
-}
-
-.fcc-panel .fcc-account-menu > li {
-  //display: inline-block;
-  cursor: pointer;
-  text-align: center;
-  border-bottom: 1px solid #fff;
-  cursor: pointer;
-  display: block;
-  height: 0;
-  text-align: center;
-}
-
-.fcc-panel > .material-icons:hover,
-.fcc-panel > .material-icons:active,
-.fcc-panel .fcc-account-menu > li:hover,
-.fcc-panel .fcc-account-menu > li.active {
-  color: #DDC9A1;
-}
-
-
-.fcc-panel .fcc-account-menu > li:hover,
-.fcc-panel .fcc-account-menu > li.active {
-  border-color: #DDC9A1;
-}
-
-.fcc-panel .fcc-account-menu {
-  position: absolute;
-  right: 60px;
-  bottom: -128px;  //43px
-  width: 200px;
-  background-color: #4a2b0f;
-  color: #fff;
-  border-radius: 0 0 4px 4px;
-}
-
-
-
-.fcc-panel .fcc-account-menu > li.h-expand {height: 42px;}
-
-.fcc-panel .fcc-account-menu > li:last-child {border: 0;}
-
-.fcc-account-menu .material-icons {
-  vertical-align: -5px;
-  padding-right: 7px;
-}
-*/
-
-
