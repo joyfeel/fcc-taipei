@@ -4,7 +4,9 @@ const jspm = require('jspm'),
 	sass = require('gulp-sass'),
 	sourcemaps = require('gulp-sourcemaps'),
 	colors = require('colors/safe'),
-	changed = require('gulp-changed');
+	changed = require('gulp-changed'),
+	imagemin = require('gulp-imagemin'),
+	cache = require('gulp-cache');
 
 // JSPM-cli api [https://github.com/jspm/jspm-cli/blob/master/docs/api.md]
 
@@ -14,7 +16,9 @@ const PATH = {
   	jsSrc: 'public/javascripts/main',
   	jsDest: 'public/dest/bundle.js',
   	scssSrc: 'public/stylesheets/main.scss',
-  	scssDest: 'public/dest/'
+  	scssDest: 'public/dest/',
+  	imageSrc: 'public/images/original/*',
+  	imageDest: 'public/images/'
 };
 
 jspm.setPackagePath('.');
@@ -40,6 +44,12 @@ gulp.task('sass', () => {
 		.pipe(gulp.dest(PATH.scssDest));
 });
 
+gulp.task('images', () => {
+  	return gulp.src(PATH.imageSrc)
+        .pipe(cache(imagemin({optimizationLevel: 5})))
+        .pipe(gulp.dest(PATH.imageDest));
+});
+
 gulp.task('watch', () => {
 	gulp.watch(PATH.jsFiles, ['scripts']).on('change', (event) => {
 		console.log(colors.cyan('File ' + event.path + ' was ' + event.type + ', running tasks...'));
@@ -52,4 +62,4 @@ gulp.task('watch', () => {
 	});
 });
 
-gulp.task('default', ['watch', 'scripts', 'sass']);
+gulp.task('default', ['watch', 'scripts', 'sass', 'images']);

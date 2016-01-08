@@ -3,9 +3,7 @@ import ReactDOM from 'react-dom';
 import Header from './components/Header/Header';
 import Entry from './components/Entry/Entry';
 
-import 'font-awesome/css/font-awesome.min.css!';
-//import "../stylesheets/style.css!";
-//import '../dest/main.css!';
+//import 'font-awesome/css/font-awesome.min.css!';
 
 class Main extends React.Component {
 	constructor () {

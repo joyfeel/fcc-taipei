@@ -21,7 +21,6 @@ System.config({
     "clean-css": "npm:clean-css@3.4.8",
     "core-js": "npm:core-js@1.2.6",
     "css": "github:systemjs/plugin-css@0.1.20",
-    "font-awesome": "npm:font-awesome@4.5.0",
     "radium": "npm:radium@0.15.3",
     "react": "npm:react@0.14.5",
     "react-dom": "npm:react-dom@0.14.5",
@@ -516,9 +515,6 @@ System.config({
       "randomatic": "npm:randomatic@1.1.5",
       "repeat-element": "npm:repeat-element@1.1.2",
       "repeat-string": "npm:repeat-string@1.5.2"
-    },
-    "npm:font-awesome@4.5.0": {
-      "css": "github:systemjs/plugin-css@0.1.20"
     },
     "npm:for-own@0.1.3": {
       "for-in": "npm:for-in@0.1.4"
