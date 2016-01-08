@@ -30,6 +30,10 @@ header {
   }
 }
 
+
+
+
+
 /*
 header {
   background-color: #4a2b0f;
@@ -139,4 +143,17 @@ header > .fcc-panel {
   .fcc-panel > .fcc-logo > a{font-size: 12px;}
 }
 */
+
+@media (max-width: 768px) {
+  .fcc-panel .fcc-account-menu {width: 100%; right: 0; border-radius: 0;}
+  .fcc-panel > .fcc-logo > a{font-size: 16px;}
+  .fcc-panel > .material-icons {margin-right: 3%;}
+}
+
+@media (max-width: 650px) {.fcc-panel > .fcc-username {display: none;}}
+
+@media (max-width: 399px) {
+  .fcc-panel > .fcc-logo img {width: 200px;}
+  .fcc-panel > .fcc-logo > a{font-size: 12px;}
+}
 

@@ -10,27 +10,23 @@ class Header extends React.Component {
 	renderHeaderUser () {
 		return (
 			<Popover>
-				<div className='fcc-link'>
-					<i className='material-icons ts'>account_circle</i>
-					<h2 className='fcc-username'>username</h2>
-				</div>
-				<div className='fcc-list'>
-					<ul className='fcc-account-menu'>
-						<li className='ts on h-expand'>
-							<i className='material-icons'>accessibility</i>
-							log-in
-						</li>
-			        	<li className="ts on h-expand">
-	      					<i className="material-icons">accessibility</i>
-	      					item-2
-	    				</li>
-	    				<li className="ts on h-expand">
-	      					<i className="material-icons">accessibility</i>
-	      					itme-3
-	    				</li>						
-					</ul>
-			    </div>
-		    </Popover>
+				<i className='material-icons ts'>account_circle</i>
+				<h2 className='fcc-username'>username</h2>
+				<ul className='fcc-account-menu'>
+					<li className='ts'>
+						<i className='material-icons'>accessibility</i>
+						log-in
+					</li>
+		        	<li className="ts">
+	  					<i className="material-icons">accessibility</i>
+	  					item-2
+					</li>
+					<li className="ts">
+	  					<i className="material-icons">accessibility</i>
+	  					itme-3
+					</li>
+				</ul>
+	    	</Popover>
 		);
 	}
 	render () {

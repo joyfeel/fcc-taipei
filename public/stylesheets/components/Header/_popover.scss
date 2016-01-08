@@ -1,48 +1,46 @@
-.fcc-link {
-	> .material-icons {
-	  display: inline-block;
-	  float: right;
-	  margin: 10px 60px 0 0;
-	  color: #fff;
-	  font-size: 35px;
-	  cursor: pointer;
-	}
-	> .fcc-username {
-	  margin: 5px 10px 0 0;
-	  float: right;
-	  font-size: 18px;
-	  color: #fff;
-	  font-weight: 200;		
-	}
+.fcc-popover > .material-icons {
+  display: inline-block;
+  float: right;
+  margin: 10px 60px 0 0;
+  color: #fff;
+  font-size: 35px;
+  cursor: pointer;
 }
 
-.fcc-account-menu {
-	> li {
-		display: inline-block;
-		cursor: pointer;
-		text-align: center;
-		border-bottom: 1px solid #fff;
-		cursor: pointer;
-		display: none;
-		height: 0;
-		text-align: center;		
-	}
+
+.fcc-popover > .fcc-username {
+  margin: 5px 10px 0 0;
+  float: right;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 200;
 }
 
-.fcc-link > .material-icons:hover,
-.fcc-link > .material-icons:active,
-.fcc-list .fcc-account-menu > li:hover,
-.fcc-list .fcc-account-menu > li.active {
+.fcc-popover .fcc-account-menu > li {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+  display: none;
+  height: 0;
+  text-align: center;
+}
+
+.fcc-popover > .material-icons:hover,
+.fcc-popover > .material-icons:active,
+.fcc-popover .fcc-account-menu > li:hover,
+.fcc-popover .fcc-account-menu > li.active {
   color: #DDC9A1;
 }
 
 
-.fcc-list .fcc-account-menu > li:hover,
-.fcc-list .fcc-account-menu > li.active {
+.fcc-popover .fcc-account-menu > li:hover,
+.fcc-popover .fcc-account-menu > li.active {
   border-color: #DDC9A1;
 }
 
-.fcc-account-menu {
+.fcc-popover .fcc-account-menu {
   position: absolute;
   right: 60px;
   bottom: -128px;  //43px
@@ -52,14 +50,17 @@
   border-radius: 0 0 4px 4px;
 }
 
-.fcc-account-menu > li.h-expand {height: 42px;}
 
-.fcc-account-menu > li:last-child {border: 0;}
+
+.fcc-popover .fcc-account-menu > li.h-expand {height: 42px;}
+
+.fcc-popover .fcc-account-menu > li:last-child {border: 0;}
 
 .fcc-account-menu .material-icons {
   vertical-align: -5px;
   padding-right: 7px;
 }
+
 
 
 /*
@@ -82,12 +83,12 @@
 }
 
 .fcc-panel .fcc-account-menu > li {
-  display: inline-block;
+  //display: inline-block;
   cursor: pointer;
   text-align: center;
   border-bottom: 1px solid #fff;
   cursor: pointer;
-  display: none;
+  display: block;
   height: 0;
   text-align: center;
 }
@@ -126,4 +127,5 @@
   padding-right: 7px;
 }
 */
+
 

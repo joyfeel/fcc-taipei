@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './components/Header/Header';
+import Entry from './components/Entry/Entry';
 
 import 'font-awesome/css/font-awesome.min.css!';
 //import "../stylesheets/style.css!";
@@ -13,7 +14,8 @@ class Main extends React.Component {
 	render () {
 		return (
 			<div>
-				<Header />	
+				<Header />
+				<Entry />
 			</div>
 		);
 	}
