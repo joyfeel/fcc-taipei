@@ -1,10 +1,12 @@
 import React from 'react';
-import Entry from '../components/Entry/Entry';
-import Main from '../components/Main';
 import {Route, IndexRoute} from 'react-router';
+import Landing from '../pages/Landing';
+import Entry from '../pages/Entry';
+import Register from '../pages/Register';
 
 export default (
-	<Route path='/' component={Main}>
+	<Route path='/' component={Landing}>
 		<IndexRoute component={Entry} />
+		<Route path='/register' component={Register}></Route>
 	</Route>
 );

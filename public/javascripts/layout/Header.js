@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Popover from './Popover.js';
+import Popover from '../components/Popover.js';
 
 const PATH = {
 	logo: 'https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg'
 };
 
 class Header extends React.Component {
-	//var a = 5;
 	renderHeader () {
 		return (
 			<Popover>
