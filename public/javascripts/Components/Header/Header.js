@@ -7,7 +7,8 @@ const PATH = {
 };
 
 class Header extends React.Component {
-	renderHeaderUser () {
+	//var a = 5;
+	renderHeader () {
 		return (
 			<Popover>
 				<i className='material-icons ts'>account_circle</i>
@@ -39,7 +40,7 @@ class Header extends React.Component {
           					Taipei
 						</a>
 					</h1>
-					{this.renderHeaderUser()}
+					{this.renderHeader()}
 				</div>
 			</header>
 		);

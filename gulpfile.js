@@ -13,7 +13,7 @@ const jspm = require('jspm'),
 const PATH = {
 	jsFiles: 'public/javascripts/**/*.js',
 	scssFiles: 'public/stylesheets/**/*.scss',
-  	jsSrc: 'public/javascripts/main',
+  	jsSrc: 'public/javascripts/app',
   	jsDest: 'public/dest/bundle.js',
   	scssSrc: 'public/stylesheets/main.scss',
   	scssDest: 'public/dest/',
