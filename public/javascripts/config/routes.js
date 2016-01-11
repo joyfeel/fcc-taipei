@@ -6,7 +6,7 @@ import Register from '../pages/Register';
 
 export default (
 	<Route path='/' component={Landing}>
+		<Route path='register' component={Register}></Route>
 		<IndexRoute component={Entry} />
-		<Route path='/register' component={Register}></Route>
 	</Route>
 );

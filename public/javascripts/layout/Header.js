@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Popover from '../components/Popover.js';
 
+import { Router, Link } from 'react-router';
+
 const PATH = {
 	logo: 'https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg'
 };
@@ -34,10 +36,10 @@ class Header extends React.Component {
 			<header>
 				<div className='fcc-panel cf'>
 					<h1 className='fcc-logo'>
-						<a href=''>
+						<Link to='/'>
 							<img src={PATH.logo} alt='Free Code Camp logo' />
           					Taipei
-						</a>
+						</Link>
 					</h1>
 					{this.renderHeader()}
 				</div>

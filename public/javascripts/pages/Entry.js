@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router } from 'react-router';
+import { Router, Link } from 'react-router';
 
 const InputEmail = () => <input type='text' name='account' placeholder='email' id='login-account' />
 const InputPassword = () => <input type='password' name='password' placeholder='password' id='login-password' />
@@ -13,18 +13,21 @@ class Entry extends React.Component {
 		};
 	}
 	handleSubmit() {
-		console.log('RRRRRR');
-		this.props.history.pushState(null, '/register');
+		//console.log(this.props.history);
+		//this.props.history.pushState(null, '/register/');
 	}
 	render () {
 		return (
 			<div className='wrapper1'>
-				<form onSubmit={this.handleSubmit.bind(this)}>
+				<form>
 					<div className='login'>
-						<input type='submit' value='Register' className='submit' />
-						<a href='' className='github'>
-							<i className='fa-github fa'></i>Github							
-						</a>
+						<Link to='/register' className='submit input'>
+							Register
+						</Link>
+						
+						<Link to='/register' className='github'>
+							<i className='fa-github fa'></i>Github
+						</Link>				
 					</div>
 				</form>
 			</div>
@@ -35,5 +38,16 @@ class Entry extends React.Component {
 Entry.PropTypes = {
 	history: React.PropTypes.object.isRequired
 };
+
+{/*
+	<form onSubmit={this.handleSubmit.bind(this)}>
+		<div className='login'>
+			<input type='submit' value='Register' className='submit' />
+			<a href='' className='github'>
+				<i className='fa-github fa'></i>Github							
+			</a>
+		</div>
+	</form>
+*/}
 
 export default Entry;

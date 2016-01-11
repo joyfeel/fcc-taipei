@@ -18,7 +18,8 @@
   margin:auto;
 }
 
-.wrapper1 input {
+//.wrapper1 input {
+.wrapper1 .input {  
   display: block;
   margin: 0 auto;
   background-color: transparent;
@@ -34,7 +35,8 @@
   box-shadow: 0 -1px 3px 0 #aaa;
 }
 
-.wrapper1 input:first-child {margin-bottom: 20px;}
+//.wrapper1 input:first-child {margin-bottom: 20px;}
+.wrapper1 .input:first-child {margin-bottom: 20px;}
 
 .wrapper1 #login-account:focus,
 .wrapper1 #login-password:foucs 
