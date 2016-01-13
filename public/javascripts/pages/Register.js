@@ -6,7 +6,6 @@ const InputPassword = () => <input type='password' name='password' placeholder='
 class Register extends React.Component {
 	constructor() {
 		super();
-		console.log('QQQQQ');
 	}
 	render () {
 		return (

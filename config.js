@@ -22,10 +22,13 @@ System.config({
     "core-js": "npm:core-js@1.2.6",
     "css": "github:systemjs/plugin-css@0.1.20",
     "history": "npm:history@2.0.0-rc2",
+    "jquery": "npm:jquery@2.2.0",
     "radium": "npm:radium@0.15.3",
+    "re-base": "npm:re-base@1.5.0",
     "react": "npm:react@0.14.6",
     "react-dom": "npm:react-dom@0.14.6",
     "react-router": "npm:react-router@1.0.3",
+    "typed.js": "npm:typed.js@1.1.1",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
@@ -427,7 +430,7 @@ System.config({
       "create-ecdh": "npm:create-ecdh@4.0.0",
       "create-hash": "npm:create-hash@1.1.2",
       "create-hmac": "npm:create-hmac@1.1.4",
-      "diffie-hellman": "npm:diffie-hellman@5.0.0",
+      "diffie-hellman": "npm:diffie-hellman@5.0.1",
       "inherits": "npm:inherits@2.0.1",
       "pbkdf2": "npm:pbkdf2@3.0.4",
       "public-encrypt": "npm:public-encrypt@4.0.0",
@@ -456,7 +459,7 @@ System.config({
       "inherits": "npm:inherits@2.0.1",
       "minimalistic-assert": "npm:minimalistic-assert@1.0.0"
     },
-    "npm:diffie-hellman@5.0.0": {
+    "npm:diffie-hellman@5.0.1": {
       "bn.js": "npm:bn.js@4.6.2",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
@@ -505,6 +508,19 @@ System.config({
       "assert": "github:jspm/nodelibs-assert@0.1.0",
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
+    "npm:faye-websocket@0.10.0": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "http": "github:jspm/nodelibs-http@1.7.1",
+      "https": "github:jspm/nodelibs-https@0.1.0",
+      "net": "github:jspm/nodelibs-net@0.1.2",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "stream": "github:jspm/nodelibs-stream@0.1.0",
+      "tls": "github:jspm/nodelibs-tls@0.1.0",
+      "url": "github:jspm/nodelibs-url@0.1.0",
+      "util": "github:jspm/nodelibs-util@0.1.0",
+      "websocket-driver": "npm:websocket-driver@0.6.4"
+    },
     "npm:fbjs@0.6.1": {
       "core-js": "npm:core-js@1.2.6",
       "loose-envify": "npm:loose-envify@1.1.0",
@@ -519,6 +535,13 @@ System.config({
       "randomatic": "npm:randomatic@1.1.5",
       "repeat-element": "npm:repeat-element@1.1.2",
       "repeat-string": "npm:repeat-string@1.5.2"
+    },
+    "npm:firebase@2.3.2": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "faye-websocket": "npm:faye-websocket@0.10.0",
+      "http": "github:jspm/nodelibs-http@1.7.1",
+      "https": "github:jspm/nodelibs-https@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:for-own@0.1.3": {
       "for-in": "npm:for-in@0.1.4"
@@ -1059,6 +1082,9 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "strip-json-comments": "npm:strip-json-comments@1.0.4"
     },
+    "npm:re-base@1.5.0": {
+      "firebase": "npm:firebase@2.3.2"
+    },
     "npm:react-dom@0.14.6": {
       "react": "npm:react@0.14.6"
     },
@@ -1324,6 +1350,20 @@ System.config({
     },
     "npm:warning@2.1.0": {
       "loose-envify": "npm:loose-envify@1.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:websocket-driver@0.6.4": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "crypto": "github:jspm/nodelibs-crypto@0.1.0",
+      "events": "github:jspm/nodelibs-events@0.1.1",
+      "net": "github:jspm/nodelibs-net@0.1.2",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "stream": "github:jspm/nodelibs-stream@0.1.0",
+      "url": "github:jspm/nodelibs-url@0.1.0",
+      "util": "github:jspm/nodelibs-util@0.1.0",
+      "websocket-extensions": "npm:websocket-extensions@0.1.1"
+    },
+    "npm:websocket-extensions@0.1.1": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     }
   }
