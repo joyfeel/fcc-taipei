@@ -51,10 +51,12 @@ gulp.task('images', () => {
 });
 
 gulp.task('watch', () => {
+  /*
 	gulp.watch(PATH.jsFiles, ['scripts']).on('change', (event) => {
 		console.log(colors.cyan('File ' + event.path + ' was ' + event.type + ', running tasks...'));
   		return;
 	});
+  */
 
 	gulp.watch(PATH.scssFiles, ['sass']).on('change', (event) => {
 		console.log(colors.magenta('File ' + event.path + ' was ' + event.type + ', running tasks...'));
@@ -62,4 +64,5 @@ gulp.task('watch', () => {
 	});
 });
 
-gulp.task('default', ['watch', 'scripts', 'sass', 'images']);
+//gulp.task('default', ['watch', 'scripts', 'sass', 'images']);
+gulp.task('default', ['watch', 'sass', 'images']);
