@@ -56,6 +56,7 @@ gulp.task('watch', () => {
   		return;
 	});
 
+
 	gulp.watch(PATH.scssFiles, ['sass']).on('change', (event) => {
 		console.log(colors.magenta('File ' + event.path + ' was ' + event.type + ', running tasks...'));
   		return;
@@ -63,3 +64,4 @@ gulp.task('watch', () => {
 });
 
 gulp.task('default', ['watch', 'scripts', 'sass', 'images']);
+//gulp.task('default', ['watch', 'sass', 'images']);
