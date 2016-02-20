@@ -36,7 +36,7 @@ class Entry extends React.Component {
 							<i className='fa-github fa'></i>Github
 						</Link>
 						<Link to='/testpage' className='thunder'>
-							<i className='fa-bolt fa'></i>Thunder
+							<i className='fa-bolt fa'></i>TEST2
 						</Link>					
 					</div>
 				</form>
