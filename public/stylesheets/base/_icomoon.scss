@@ -1,11 +1,11 @@
 /******** icon font reset ********/
 @font-face {
     font-family: 'icomoon';
-    src:    url('../fonts/icomoon.eot?lptnuq');
-    src:    url('../fonts/icomoon.eot?lptnuq#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.ttf?lptnuq') format('truetype'),
-        url('../fonts/icomoon.woff?lptnuq') format('woff'),
-        url('../fonts/icomoon.svg?lptnuq#icomoon') format('svg');
+    src:    url('../fonts/icomoon.eot?vhibso');
+    src:    url('../fonts/icomoon.eot?vhibso#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?vhibso') format('truetype'),
+        url('../fonts/icomoon.woff?vhibso') format('woff'),
+        url('../fonts/icomoon.svg?vhibso#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -28,8 +28,11 @@
 .icon-g-plus-3:before {
     content: "\e931";
 }
-.icon-eye-1:before {
-    content: "\e932";
+.icon-eye-closed-1:before {
+    content: "\e934";
+}
+.icon-eye-opened-1:before {
+    content: "\e935";
 }
 .icon-member-3:before {
     content: "\e933";
