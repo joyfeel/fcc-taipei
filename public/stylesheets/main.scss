@@ -1,29 +1,16 @@
-@charset 'UTF-8';
 
-// 1. Configuration and helpers
-@import
-	'base/variables';
+//base
+@import "base/variables";
+@import "base/custom-reset";
+@import "base/base";
+@import "base/icomoon";
+@import "base/animate";
+@import "base/mixins";
 
-// 2. Vendors
-@import
-	'base/icomoon';
 
-// 3. Base stuff
-@import
-	'base/base',
-  	'base/custom-reset';
+//layout
+@import "layout/header";
+@import "layout/wrapper";
 
-// 4. Layout-related sections
-@import
-	'layout/header.scss';
-
-// 5. Components
-@import
-  	'components/popover.scss';
-
-// 6. Page-specific styles
-@import
-	'pages/entry.scss',
-	'pages/register.scss',
-	'pages/testpage.scss';
-
+//components
+@import "components/logo";

@@ -1,7 +1,5 @@
-// -----------------------------------------------------------------------------
-// This file contains all application-wide Sass variables.
-// -----------------------------------------------------------------------------
+//Load fonts
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@charset "UTF-8";
 
-/// Copy text color
-/// @type Color
-$text-color: #222 !default;
+$mainColor: rgb(0, 100 ,0);
