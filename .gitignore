@@ -1,4 +1,6 @@
-
+public/dest/*.js
+public/dest/*.css
+public/dest/*.js.map
 .sass-cache
 jspm_packages
 node_modules
