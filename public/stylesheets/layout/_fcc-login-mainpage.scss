@@ -1,8 +1,10 @@
 .fcc-login-mainpage {
   max-width: 360px;
-  width: 80%;
-  height: 300px;
-  @include center($top:1em);
-  background-color: #f0f;
+  width: 85%;
+  height: 320px;
+  @include center($top:80px);
+  background-color: rgba(0, 100, 0, 0.3);
+  overflow: hidden;
+  border-radius: 5px;
 }//.fcc-login-mainpage
 
