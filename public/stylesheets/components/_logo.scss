@@ -4,9 +4,10 @@
     @include center($top:2px);
     width: 164px;
     height: 24px;
-    background: url('../images/freecodecamp_logo.svg') no-repeat center;
-    background-size: contain;
+//    background: url('../images/freecodecamp_logo.svg') no-repeat center;
+//    background-size: contain;
     @include animated($delay: .85s);
+    @include bkImg($img:'../images/freecodecamp_logo.svg', $bgSize:contain)
   } //a
 //  span {
 //    width: 150px;

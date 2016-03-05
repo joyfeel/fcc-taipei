@@ -7,10 +7,11 @@
 @import "base/animate";
 @import "base/mixins";
 
-
 //layout
 @import "layout/header";
 @import "layout/wrapper";
+@import "layout/fcc-login-mainpage";
 
 //components
 @import "components/logo";
+@import "components/social-media-login";

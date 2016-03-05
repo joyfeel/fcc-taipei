@@ -21,6 +21,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+%bkImg {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+
 
 //::-webkit-input-placeholder {
 //  color: #fff;

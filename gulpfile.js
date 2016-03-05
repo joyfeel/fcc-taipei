@@ -6,7 +6,8 @@ const jspm = require('jspm'),
 	colors = require('colors/safe'),
 	changed = require('gulp-changed'),
 	imagemin = require('gulp-imagemin'),
-	cache = require('gulp-cache');
+	cache = require('gulp-cache'),
+  webserver = require('gulp-webserver');
 
 // JSPM-cli api [https://github.com/jspm/jspm-cli/blob/master/docs/api.md]
 
@@ -63,5 +64,14 @@ gulp.task('watch', () => {
 	});
 });
 
-gulp.task('default', ['watch', 'scripts', 'sass', 'images']);
+//gulp.task('webserver', function() {
+//  gulp.src('public/stylesheets')
+//    .pipe(webserver({
+//        livereload: true,
+//        open: true,
+//        port: 3000
+//  }));
+//});
+
+gulp.task('default', ['watch', 'scripts', 'sass', 'images'']);
 //gulp.task('default', ['watch', 'sass', 'images']);

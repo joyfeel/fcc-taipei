@@ -32,3 +32,30 @@
   animation-fill-mode: $fill-mode;
 }
 
+@mixin bkImg(
+  $img,
+  $bgRpt: no-repeat,
+  $bgPos: center center,
+  $bgSize: cover
+  ) {
+  background: url($img);
+  background-repeat: $bgRpt;
+  background-position: $bgPos;
+  background-size: $bgSize;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
