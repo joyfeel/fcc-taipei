@@ -2,7 +2,7 @@
   max-width: 360px;
   width: 85%;
   height: 320px;
-  @include center($top:80px);
+  @include center($pos:fixed);
   background-color: rgba(0, 100, 0, 0.3);
   overflow: hidden;
   border-radius: 5px;
