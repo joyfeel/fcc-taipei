@@ -4,7 +4,7 @@ header {
   background-color: rgba($mainColor, .7);
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 10;
 //  border-bottom: 2px solid lighten($mainColor, 60%);
   box-shadow: 0 1px 4px 0 rgba($mainColor, .75);
 //  opacity: 0;
