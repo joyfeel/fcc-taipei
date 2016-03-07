@@ -1,4 +1,68 @@
   .social-media-login {
+    position: relative;
+    
+    b {
+      @include animated;
+      display: block;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 15px;
+//      font-family: 'Merriweather', sans-serif;
+      font-family: Helvetica, sans-serif;
+      color: #fff;
+      font-size: 21px;
+      font-weight: 500;
+      text-shadow: 1px 1px 1px #4a4a4a;
+
+      &:before,&:after {
+        @include bf_af($w:90px,$h:1px);
+        background-color: $subColor;
+        bottom: 10px;
+        box-shadow: 0 1px 1px 0 #4a4a4a;
+      }
+
+      &:before {
+        left: 21px;
+        @include bp(25em,26.8125em) { //400~429px
+          width: 25%;
+          left: 5.8333%;
+        }
+        @include bp(0,24.9375em) { //0~399px
+          width: 25%;
+          left: 3%;
+        }
+      }
+      
+      &:after {
+        right: 21px;
+        @include bp(25em,26.8125em) { //400~429px
+          width: 25%;
+          right: 5.8333%;
+        }
+        @include bp(0,24.9375em) { //0~399px
+          width: 25%;
+          right: 3%;
+        }
+      }
+    
+    }//b
+    
+    b:last-child {
+      top: 130px;
+      
+      &:before, &:after {
+        @include bf_af($w:35.5555%,$h:1px);
+        
+        @include bp(0,23.75em) { //0~380px
+          width: 38.55555%;
+        }
+      }
+      
+      
+      
+    } 
+
     ul {
       display: flex;
       display: -webkit-flex;
@@ -23,7 +87,7 @@
       flex: 1 0 25%;
       -webkit-flex: 1 0 25%;
 //      margin: auto;
-      margin-top: 65px;
+      margin-top: 60px;
     }//li
     
     a {
@@ -36,6 +100,8 @@
       text-shadow: 1px 1px 4px #4a4a4a;
       position: relative;
       z-index: 2;
+      @include animated($duration:2.5s, $delay:.5s);
+      @extend %jello;
     }
     
     

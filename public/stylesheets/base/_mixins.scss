@@ -21,7 +21,7 @@
 
 @mixin animated (
   $duration:1s,
-  $delay: 0,
+  $delay:0,
   $fill-mode: both
   ) {
   -webkit-animation-duration: $duration;
@@ -44,7 +44,26 @@
   background-size: $bgSize;
 }
 
+@mixin bf_af($c:"",$w:100%,$h:100%, $abs:absolute) {
+  content: $c;
+  display: block;
+  width: $w;
+  height: $h;
+  position: $abs;
+}
 
+@mixin bp($args...) {
+  @if length($args) == 1 {
+    @media (min-width: nth($args, 1)) {
+      @content;
+    }
+  } @else {
+    @media (min-width: nth($args, 1)) 
+      and (max-width: nth($args, 2)) {
+      @content;
+    }
+  } 
+}
 
 
 

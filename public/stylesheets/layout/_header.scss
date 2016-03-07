@@ -14,7 +14,7 @@ header {
 //  animation-duration: .3s;
 //  animation-iteration-count: infinite;
   overflow: hidden;
-  @extend %animated;
+  @include animated;
 
   > .fcc-panel {
     position: relative;

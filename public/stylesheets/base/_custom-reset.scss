@@ -13,7 +13,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 textarea { resize: none;}
 
 a ,button {
-  cursor: pointer;
+//  cursor: pointer;
   transition: .2s;
   -weblit-transition: .2s;
 }
@@ -73,29 +73,4 @@ td,th {padding: 0;}
 ol, ul {list-style: outside none none; }
 
 q::before, q::after, blockquote::before, blockquote::after { content: ""; }
-
-
-/*clearfix*/
-.cf { zoom: 1;}
-.cf:before, .cf:after { 
-  content: " ";
-  display: table;
-}
-.cf:after { clear: both;}
-
-/*display on && off*/
-.off{display: none !important;}
-.on {display:block !important;}
-
-/*screen only*/
-.sr {font-size: 0; width: 0;height: 0;}
-
-/*opacity 0*/
-.op {opacity: 0;}
-
-/*transition*/
-.ts {
-  transition: .3s;
-  -webkit-transition: .3s;
-}
 /******** global reset End********/
