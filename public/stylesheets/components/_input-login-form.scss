@@ -1,9 +1,7 @@
 .input-login-form {
-  padding-top:51px;
+  padding-top:41px;
 //  height: 180px;
-  
-  
-  
+
   label {
     display: block;
     position: relative;
@@ -11,33 +9,82 @@
     margin-top: 25px;
     @extend %fadeIn;
     @include animated($delay: 1.2s);
+
     i {
       position: absolute;
       top: 0;
       left: 0;
       color: #fff;
-      top: 9px;
-      left: 18%;
+      top: 11px;
+      left: 67px;
       z-index: 1;
+      @include bp(415px,429px) {left: 18.5%;}
+      @include bp(400px,414px) {left: 17.5%;}
+      @include bp(385px,399px) {left: 16.5%;}
+      @include bp(370px,384px) {left: 15.5%;}
+      @include bp(355px,369px) {left: 14%;}
+      @include bp(340px,354px) {left: 13%;}
+      @include bp(325px,339px) {left: 11.2%;}
+      @include bp(0,324px) {left: 10%;}
     } //i
-  
+    
+    .inp-iconColor-changed {
+      color: $subColor;
+      text-shadow: 1px 1px 1px #4a4a4a;
+      @extend %ts;
+    }//.iconColor-changed  input輸入時的效果 跟 hover 時一樣
+    
+//    .icon-eye-closed-1, .icon-eye-opened-1 {
+//      z-index: 1;
+//      width: 35px;
+//      text-align: center;
+//      line-height: 35px;
+//      background: rgba($subColor, .3);
+//      border-radius: 0 2px 2px 0;
+//      display: flex;
+//      justify-content: flex-start;
+//      float: left;
+//      font-size: 18px;
+//      @include bp(415px,429px) {right: calc(10%+2px);}
+//      @include bp(400px,414px) {right: 17.5%;}
+//      @include bp(385px,399px) {right: 16.5%;}
+//      @include bp(370px,384px) {right: 15.5%;}
+//      @include bp(355px,369px) {right: 14%;}
+//      @include bp(340px,354px) {right: 13%;}
+//      @include bp(325px,339px) {right: 11.2%;}
+//      @include bp(0,324px) {right: 10%;}
+      
+    
+//    }
   } //label
 
   input {
     display: block;
-    width: calc(90% - 2px);
-    max-width: 230px;
-    line-height: 24px;
+//    width: calc(90% - 2px);
+//    max-width: 235px;
+    width: 235px;
+    line-height: 27px;
     padding: 4px 5px;
     margin: 0 auto;
     text-align: center;
     color: #fff;
-    background: rgba($subColor, .1);
+    background: rgba($subColor, .2);
     font-size: 18px;
     border-radius: 2px;
     text-shadow: 1px 1px 1px #4a4a4a;
-
+    
+    &:hover + i, &:active + i {
+      color: $subColor;
+      text-shadow: 1px 1px 1px #4a4a4a;
+      @extend %ts;
+    } 
   } //input
+  
+  .input-login-active {
+    text-align: left;
+    width: 200px;
+    padding-left: 40px;
+  } //.input-login-active  點擊input時的效果
   
   #email-login {
 //    @include animated($delay: 1.5s);
@@ -48,12 +95,17 @@
   } //#password-login
   
   #submit-login {
-    max-width: 240px;
-    background: rgba(0,188,212,0.4);
+    min-width: 245px;
+    padding: 4px 0;
+    background: rgba(0,188,212,.3);
 //    @include animated($delay: 1.75s);
 //    background: rgba(236,62,8,0.4);
     
+    &:hover, &:active {
+      background: rgba(0,188,212,.7);
+      @extend %ts;
+    } //hover, active
   } //#submit-login  
 
 
-}//.input-login
+}//.input-login-form
