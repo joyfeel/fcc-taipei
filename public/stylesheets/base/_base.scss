@@ -51,25 +51,25 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: .3s;
 }
 
-//::-webkit-input-placeholder {
-//  color: #fff;
-//  text-shadow: 1px 1px 1px #4a4a4a;
-//}
-//
-//:-moz-placeholder { /* Firefox 18- */
-//  color: #fff;
-//  text-shadow: 1px 1px 1px #4a4a4a;
-//  text-align: center;
-//}
-//
-//::-moz-placeholder {  /* Firefox 19+ */
-//  color: #fff;
-//  text-shadow: 1px 1px 1px #4a4a4a;
-//  text-align: center;
-//}
-//
-//:-ms-input-placeholder {  
-//  color: #fff;
-//  text-shadow: 1px 1px 1px #4a4a4a; 
-//  text-align: center;
-//}
+::-webkit-input-placeholder {
+  color: #fff;
+  text-shadow: 1px 1px 1px #4a4a4a;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+  text-shadow: 1px 1px 1px #4a4a4a;
+  text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #fff;
+  text-shadow: 1px 1px 1px #4a4a4a;
+  text-align: center;
+}
+
+:-ms-input-placeholder {  
+  color: #fff;
+  text-shadow: 1px 1px 1px #4a4a4a; 
+  text-align: center;
+}

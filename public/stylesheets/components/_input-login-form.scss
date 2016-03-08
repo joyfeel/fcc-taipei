@@ -1,0 +1,59 @@
+.input-login-form {
+  padding-top:51px;
+//  height: 180px;
+  
+  
+  
+  label {
+    display: block;
+    position: relative;
+//    line-height: 30px;
+    margin-top: 25px;
+    @extend %fadeIn;
+    @include animated($delay: 1.2s);
+    i {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #fff;
+      top: 9px;
+      left: 18%;
+      z-index: 1;
+    } //i
+  
+  } //label
+
+  input {
+    display: block;
+    width: calc(90% - 2px);
+    max-width: 230px;
+    line-height: 24px;
+    padding: 4px 5px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    background: rgba($subColor, .1);
+    font-size: 18px;
+    border-radius: 2px;
+    text-shadow: 1px 1px 1px #4a4a4a;
+
+  } //input
+  
+  #email-login {
+//    @include animated($delay: 1.5s);
+  } //#email-login
+  
+  #password-login {
+//    @include animated($delay: 1.65s);
+  } //#password-login
+  
+  #submit-login {
+    max-width: 240px;
+    background: rgba(0,188,212,0.4);
+//    @include animated($delay: 1.75s);
+//    background: rgba(236,62,8,0.4);
+    
+  } //#submit-login  
+
+
+}//.input-login

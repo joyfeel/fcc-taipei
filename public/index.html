@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <title>Freecodecamp message board</title>
+  <title>Freecodecamp</title>
   <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="icon" type="image/ico" href="images/favicon.ico">
@@ -30,7 +30,7 @@
     <div class="fcc-login-mainpage">
       <h2 class="sr">freecodecamp login page</h2>
       <div class="social-media-login">
-        <b class="fadeInUp">Login with</b>
+        <b>Login with</b>
         <ul>
           <li>
             <a href="" alt="login via facebook" title="facebook" class="icon-facebook-2"><i></i></a>
@@ -45,23 +45,35 @@
             <a href="" alt="login via github" title="github" class="icon-github-1"><i></i></a>
           </li>
         </ul>
-        <b class="fadeInUp">or</b>
-      </div> <!--.social-media-login-->
+        <b>or</b>
+      </div> <!--[End] .social-media-login-->
       
-      <form action="" class="input-login">
-        <label for=""><input type="email" placeholder="E-mail"></label>
-        <label for=""><input type="password" placeholder="password"></label>
-        <label for=""><input type="submit" placeholder="submit" value="sign in"></label>
+      <form action="" class="input-login-form">
+
+        <label for="email-login">
+          <i class="icon-mail-3"></i>
+          <input type="email" placeholder="e-mail" name="email" id="email-login">
+        </label>
+
+        <label for="password-login">
+          <i class="icon-password-2"></i>
+          <input type="password" placeholder="password" name="password" id="password-login">
+        </label>
+
+        <label for="submit-login">
+          <i class="icon-login-1"></i>
+          <input type="submit" name="submit" id="submit-login" value="sign in">
+        </label>
+        
       
       
       
       
       
+      </form> <!--[End].login-form-->
       
-      </form> <!--.login-form-->
       
-      
-    </div> <!--.fcc-login-mainpage-->
+    </div> <!--[End].fcc-login-mainpage-->
   
   </div> <!--[End] .wrapper-->
   </div>
