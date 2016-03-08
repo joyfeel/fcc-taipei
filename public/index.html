@@ -55,22 +55,24 @@
           <i class="icon-mail-3"></i>
         </label>
 
-        <label for="password-login" class="cf">
+        <label for="password-login">
           <input type="password" placeholder="password" name="password" id="password-login">
           <i class="icon-password-2"></i>
-          <span class="icon-eye-closed-1"></span>
+          <i class="icon-eye-closed-1"></i>
         </label>
 
         <label for="submit-login">
           <input type="submit" name="submit" id="submit-login" value="sign in">
-          <i class="icon-login-1"></i>
+<!--          <i class="icon-login-1"></i>-->
         </label>
         
-      
-      
-      
-      
-      
+        <a href="" class="forgot-pwd" alt="forgot password?">Forgot password?</a>
+        
+        <div  class="signup">
+          Need an account?
+          <a href="" alt="sign up your account">sign up</a>  
+        </div>
+
       </form> <!--[End].login-form-->
       
       
@@ -78,6 +80,43 @@
   
   </div> <!--[End] .wrapper-->
   </div>
+  <script>
+    window.addEventListener('resize', function() {
+      //console.log(this.scrollTop);
+//      this.scrollTop = 0;
+      LoginiconPos();
+    }, false);
+    
+    window.addEventListener('load', function() {
+      this.scrollTop = 0;
+      console.log(this.scrollTop);
+      LoginiconPos();
+    }, false);
+
+    
+    function LoginiconPos() {
+      var $fccLoginMainpage = document.querySelector('.fcc-login-mainpage').clientWidth;
+      var eyeC = document.querySelector('.icon-eye-closed-1');
+      var eyeO = document.querySelector('.icon-eye-opened-1');
+      
+      
+        if($fccLoginMainpage < 360) {
+          if(eyeC) {
+          eyeC.style.right = ((($fccLoginMainpage) - 245)/2) + 'px';  
+          } else {
+          eyeO.style.right = ((($fccLoginMainpage) - 245)/2) + 'px';  
+          }
+        } else {
+            if(eyeC) {
+              eyeC.style.right = 58 + 'px';  
+            } else {
+              eyeO.style.right = 58 + 'px';  
+            }
+        }
+    }
+    
+    
+  </script>
 <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
 </body>
 </html>

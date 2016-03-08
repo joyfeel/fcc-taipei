@@ -28,23 +28,30 @@
       @include bp(0,324px) {left: 10%;}
     } //i
     
+    
+    .icon-password-2 {
+      top:12px;
+    }
+    
     .inp-iconColor-changed {
       color: $subColor;
       text-shadow: 1px 1px 1px #4a4a4a;
       @extend %ts;
     }//.iconColor-changed  input輸入時的效果 跟 hover 時一樣
     
-//    .icon-eye-closed-1, .icon-eye-opened-1 {
-//      z-index: 1;
-//      width: 35px;
-//      text-align: center;
-//      line-height: 35px;
-//      background: rgba($subColor, .3);
-//      border-radius: 0 2px 2px 0;
-//      display: flex;
-//      justify-content: flex-start;
-//      float: left;
-//      font-size: 18px;
+    .icon-eye-closed-1, .icon-eye-opened-1 {
+      z-index: 1;
+      width: 35px;
+      height: 35px;
+      text-align: center;
+      line-height: 38px;
+//      background: rgba($lineColor, .3);
+      border-radius: 0 2px 2px 0;
+      font-size: 16px;
+      left: auto;
+      right: 57px;
+      top: 0;
+      cursor: pointer;
 //      @include bp(415px,429px) {right: calc(10%+2px);}
 //      @include bp(400px,414px) {right: 17.5%;}
 //      @include bp(385px,399px) {right: 16.5%;}
@@ -53,9 +60,12 @@
 //      @include bp(340px,354px) {right: 13%;}
 //      @include bp(325px,339px) {right: 11.2%;}
 //      @include bp(0,324px) {right: 10%;}
-      
-    
-//    }
+      &:hover {
+//        background: rgba($lineColor, .6);
+        color: $subColor;
+        @extend %ts;
+      }
+    }
   } //label
 
   input {
@@ -77,7 +87,16 @@
       color: $subColor;
       text-shadow: 1px 1px 1px #4a4a4a;
       @extend %ts;
-    } 
+    }
+    
+    
+    &:hover + .icon-login-1, &:active + .icon-login-1 {
+      color: transparent;
+      text-shadow: none;
+//      @extend %ts;
+    }//.icon-login-1
+    
+    
   } //input
   
   .input-login-active {
@@ -98,6 +117,9 @@
     min-width: 245px;
     padding: 4px 0;
     background: rgba(0,188,212,.3);
+    @include bp(0, 767px) {
+      background: rgba(0,188,212,.7);
+    }
 //    @include animated($delay: 1.75s);
 //    background: rgba(236,62,8,0.4);
     
@@ -105,7 +127,60 @@
       background: rgba(0,188,212,.7);
       @extend %ts;
     } //hover, active
-  } //#submit-login  
+  } //#submit-login
+  
+  
+  .forgot-pwd {
+    @include animated($delay:1.5s);
+    @extend %fadeInUp;
+    display: block;
+    width: 140px;
+    margin: 5px auto 0;
+    line-height: 35px;
+    text-align: center;
+    color: rgba(255,255,255, .7);
+    text-shadow: 1px 1px 1px #4a4a4a;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }//.forgot-pwd
+  
+  
+  .signup {
+    width: 245px;
+//    padding-left: 40px;
+    margin: 25px auto 19px;
+    height: 35px;
+    line-height: 35px;
+    text-align: right;
+    color: rgba(255,255,255, .7);
+    position: relative;
+    @include animated($delay:1.5s);
+    @extend %fadeInUp;
 
-
+    a {
+      display: inline-block;
+      width: 75px;
+//      height: 35px;
+      line-height: 35px;
+      font-size: 18px;
+      background: rgba(236,62,8,0.4);
+      margin-left: 5px;
+      border-radius: 2px;
+      color: rgba(255,255,255, .7);
+      text-align: center;
+      @include bp(0, 767px) {
+        color: #fff;
+        background: rgba(236,62,8,.7);
+      }
+  
+      &:hover {
+        color: #fff;
+        background: rgba(236,62,8,0.7);
+        @extend %ts;
+      }
+    }//span
+  }//.signup
+  
 }//.input-login-form
