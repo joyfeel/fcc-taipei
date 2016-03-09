@@ -13,7 +13,8 @@
       color: #fff;
       font-size: 21px;
       font-weight: 400;
-      text-shadow: 1px 1px 1px #4a4a4a;
+//      text-shadow: 1px 1px 1px #4a4a4a;
+      text-shadow: 0 1px 0 rgba(0,0,0,0.3);
       @extend %fadeInUp;
 
       &:before,&:after {
@@ -98,7 +99,7 @@
       font-size: 3.5em;
       text-align: center;
       color: #ffcc4d;
-      text-shadow: 1px 1px 4px #4a4a4a;
+      text-shadow: 0 1px 0 rgba(0,0,0,0.3);
       position: relative;
       z-index: 2;
       @include animated($duration:2.5s, $delay:.5s);
