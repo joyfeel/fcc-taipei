@@ -1,13 +1,13 @@
   .social-media-login {
     position: relative;
-    
     b {
       @include animated;
       display: block;
       position: absolute;
       width: 100%;
       text-align: center;
-      top: 19px;
+//      top: 19px;
+      top: 12px;
 //      font-family: 'Merriweather', sans-serif;
       font-family: Helvetica, sans-serif;
       color: #fff;
@@ -51,7 +51,7 @@
     }//b
     
     b:last-child {
-      top: 135px;
+      top: 100px;
       font-style: italic;
       &:before, &:after {
         @include bf_af($w:35.5555%,$h:1px);
@@ -89,7 +89,7 @@
       flex: 1 0 25%;
       -webkit-flex: 1 0 25%;
 //      margin: auto;
-      margin-top: 65px;
+      margin-top: 43px;
     }//li
     
     a {
@@ -99,35 +99,37 @@
       font-size: 3.5em;
       text-align: center;
       color: #ffcc4d;
-      text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+//      text-shadow: 0 1px 0 rgba(0,0,0,0.3);
       position: relative;
       z-index: 2;
-      @include animated($duration:2.5s, $delay:.5s);
-      @extend %jello;
+      @include animated($duration:1.5s);
     }
     
     
     .icon-facebook-2 {
-      &:hover, &:active {
-        transition: all .3s; 
+        color: #3b5998;
+        &:hover,&:active {
+        //transition: all .3s; 
         text-shadow: none;
         color: #3b5998;
+        @extend %jello;
       }
       i {
           position: absolute;
-          background-color: transparent;
+          //background-color: transparent;
           display: block;
           width: 39px;
           height: 50px;
           top: 2px;
           left: 9px;
+          background-color: #fff;
+          z-index: -1;
       }
       
-      &:hover > i {
-        background-color: #fff;
-        transition: background-color .25s;
-        z-index: -1;
-      }
+//      &:hover > i {
+////        transition: background-color .25s;
+//        z-index: -1;
+//      }
     } //.icon-facebook-2
     
     
@@ -135,10 +137,11 @@
     
     
     .icon-twitter-1 {
+      color: #55acee;
       &:hover, &:active {
-        transition: color .4s; 
-  //      text-shadow: none;
-        color: #55acee;
+        @extend %jello;
+//        transition: color .4s; 
+        text-shadow: 0 1px 0 rgba(0,0,0,0.3);
       }
     }//.icon-twitter-1
 
@@ -146,53 +149,63 @@
     
     
     .icon-g-plus-3 {
+      border-radius: 50%;
+      color: #dc4e41;
       &:hover, &:active {
-        transition: all .4s; 
-        text-shadow: none;
-        color: #dc4e41;
+        @extend %jello;
+//        transition: all .4s; 
+//        text-shadow: none;
+        box-shadow: 0 1px 0 rgba(0,0,0,0.3);
       }
       i {
           position: absolute;
-          background-color: transparent;
+//          background-color: transparent;
+          background-color: #fff;
           display: block;
           width: 50px;
           height: 50px;
           top: 4px;
           left: 4px;
-        border-radius: 50%;
+          border-radius: 50%;
+          z-index: -1;
       }
-      &:hover > i {
-        background-color: #fff;
-        transition: background-color .4s;
-        z-index: -1;
-      }  
+//      &:hover > i {
+//        background-color: #fff;
+//        transition: background-color .4s;
+//      }  
     }//.icon-g-plus-3
 
 
     .icon-github-1 {
-      &:hover, &:active {
-      transition: color .4s; 
-      text-shadow: none;
+      border-radius: 50%;
       color: #333;
+      &:hover, &:active {
+      @extend %jello;
+//      transition: color .4s; 
+//      text-shadow: none;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.3);
+      //color: #333;
 //      color: lighten(#492778, 25%)
       }
         
       i {
           position: absolute;
-          background-color: transparent;
+//          background-color: transparent;
+          background-color: #fff;
           display: block;
           width: 55px;
           height: 55px;
           top: 1px;
           left: 0;
           border-radius: 50%;
+          z-index: -1;
         }  
       
-      &:hover > i {
-        background-color: #fff;
-        transition: background-color .5s;
-        z-index: -1;
-      } 
+//      &:hover > i {
+//        background-color: #fff;
+//        transition: background-color .5s;
+//        z-index: -1;
+//      } 
     } //.icon-github-1
 
   } //.social-media-login

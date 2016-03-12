@@ -1,7 +1,8 @@
 .wrapper {
   width: 100%;
   height: 100vh;
-  min-height: 630px;
+//  min-height: 630px;
+  min-height: 480px;
   position: relative;
   @include bkImg('../images/login.jpg');
   //background-image: url('../images/login.jpg');
