@@ -21,7 +21,11 @@ header {
     max-width: 1024px;
     height: 37px;
     margin: 0 auto;
-  } //.fcc-panels  
+  } //.fcc-panels
+
+  > .login-status {
+    height: 45px;
+  } //.login-status
 } //header
 
 //._1 {

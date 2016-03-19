@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,21 +13,33 @@
 <body>
 <div id="app">
   <header class="bounceInDown">
-    <div class="fcc-panel">
+    <div class="fcc-panel login-status">
       <div class="logo">
         <h1>
           <a href="#home" class="fadeInUp">
           </a>
           <em class="sr">This is freecodecamp, Hello Taipei</em>
-<!--          <span class="fadeInUp">Hello Taipei</span>-->
+         <span class="fadeInUp off">Hello Taipei</span>
         </h1>
       </div>
+
+
+      <div class="hdr-member-panel fadeInUp">
+        <h2 class="member-nickname">Hi, <span>Mado</span></h2>
+        <a href="" class="member-pic noti">
+          <img src="_0mado.jpg" alt="member picture">
+          <i>4</i>
+        </a>
+      </div>
+      <script type="javascript" src="Untitled-1.js" />
+
+
     </div>
   </header> <!--[End] header-->
-  
+
   <div class="wrapper filter">
-   
-    <div class="fcc-login-mainpage">
+
+    <div class="fcc-login-mainpage off">
       <h2 class="sr">freecodecamp login page</h2>
       <div class="social-media-login">
         <b>Login with</b>
@@ -47,7 +59,7 @@
         </ul>
         <b>or</b>
       </div> <!--[End] .social-media-login-->
-      
+
       <form action="" class="input-login-form">
 
         <label for="email-login">
@@ -63,21 +75,249 @@
 
         <label for="submit-login" style="margin-top:15px;">
           <input type="submit" name="submit" id="submit-login" value="sign in">
-<!--          <i class="icon-login-1"></i>-->
+         <i class="icon-login-1 off"></i>
         </label>
-        
+
         <a href="" class="forgot-pwd" alt="forgot password?">Forgot password?</a>
-        
+
         <div  class="signup">
           Need an account?
-          <a href="" alt="sign up your account">sign up</a>  
+          <a href="" alt="sign up your account">sign up</a>
         </div>
 
       </form> <!--[End].login-form-->
-      
-      
+
+
     </div> <!--[End].fcc-login-mainpage-->
-  
+
+    <form action="" class="input-register-form off">
+      <h2>freecodecamp register form</h2>
+
+      <div class="register-pic-upload">
+        <h3>照片上傳</h3>
+        <img src="_0mado.jpg" alt="沒上傳照片就用這張圖">
+        <label for="member-pic-upload">上傳不超過1mb</label>
+        <input type="file" name="memeber_picture" id="member-pic-upload"/>
+      </div>
+
+
+      <h3>註冊暱稱</h3>
+      <label for="nickname-register">
+        <i class="icon-member-3"></i>
+        <input type="text" name="register_nickname" id="nickname-register" placeholder="nickname"/>
+      </label>
+
+
+      <h3>註冊信箱</h3>
+      <label for="email-register">
+        <i class="icon-mail-3"></i>
+        <input type="email" name="register_email" id="email-register" placeholder="e-mail"/>
+      </label>
+
+      <h3>註冊密碼</h3>
+      <label for="password-register">
+        <i class="icon-password-2"></i>
+        <input type="password" name="register_password" placeholder="password" id="password-register" />
+        <i class="icon-eye-opened-1"></i>
+      </label>
+
+      <input type="submit" name="submit_register" id="submit-register"/>
+
+    </form> <!-- [End] .input-register-form-->
+
+    <nav class="nav-panel">
+      <h3 class="off">fcc navigation</h3>
+      <ul class="">
+        <li>
+          <a href="" alt="search" class="search-link">
+            <i class="icon-search-1"></i>
+            Search
+          </a>
+        </li>
+        <li>
+          <a href="" alt="notification" class="noti-link">
+            <i class="icon-noti-2"></i>
+            <span>4</span>
+            Notification
+          </a>
+        </li>
+        <li>
+          <a href="" alt="online" class="online-link">
+            <i class="icon-member-2"></i>
+            Online(<span>3</span>)
+          </a>
+        </li>
+        <li>
+          <a href="" alt="setting" class="setting-link">
+            <i class="icon-setting-4"></i>
+            Setting
+          </a>
+        </li>
+        <li>
+          <a href="" alt="logout" class="logout-link">
+            <i class="icon-logout-3"></i>
+            Logout
+          </a>
+        </li>
+      </ul>
+    </nav> <!--[End] .nav-panel -->
+
+    <aside class="chat-panel">
+      <h3 class="off">online-member-list</h3>
+      <a href="" alt="chat list" class="chat-list">
+        <em class="online-member">Mado</em>
+        <img src="_0mado.jpg" alt="member picture">
+      </a>
+      <a href="" alt="chat list" class="chat-list">
+        <em class="online-member">Mado</em>
+        <img src="_0mado.jpg" alt="member picture">
+      </a>
+      <a href="" alt="chat list" class="chat-list">
+        <em class="online-member">Mado</em>
+        <img src="_0mado.jpg" alt="member picture">
+      </a>
+      <button class="closed-btn" role="close the chat panel">close</button>
+    </aside>  <!--[End] .chat-panel-->
+
+    <div class="search-panel">
+      <h3 class="off">search panel</h3>
+      <input type="text" name="search" placeholder="SEARCH">
+      <i class="icon-search-1"></i>
+    </div>  <!-- [End] fcc-search -->
+
+    <form class="textarea-panel">
+      <h3 class="off">textarea panel</h3>
+      <img src="_0mado.jpg" alt="">
+      <input type="text" class="subject" placeholder="subject"/>
+      <textarea name="name" rows="" cols="" placeholder="description"></textarea>
+      <input type="submit">
+    </form>  <!-- [End] .textarea-panel -->
+
+    <div class="noti-panel">
+      <h3 class="off">notification panel</h3>
+      <ul class="noti-list">
+        <li class="comment">
+          <a href="" alt="" class="noti-content">
+            <img src="_0mado.jpg" alt="">
+            <span class="noti-desc"> <b class="">Mado</b> commented on your post ⎡<b>This is not Mado</b>⎦</span>
+            <em class="time">2 days ago<i class="icon-comments"></i></em>
+          </a>
+        </li>
+
+        <li class="thumb-up">
+          <a href="" alt="" class="noti-content">
+            <img src="_0mado.jpg" alt="">
+            <span class="noti-desc"> <b class="">Mado</b> thumbs up your post ⎡<b>MADO</b>⎦</span>
+            <em class="time">1 hour ago<i class="icon-thumb-up-1"></i></em>
+          </a>
+        </li>
+
+        <li class="thumb-down">
+          <a href="" alt="" class="noti-content">
+            <img src="_0mado.jpg" alt="">
+            <span class="noti-desc"> <b class="">Mado</b> thumbs down your post ⎡<b>DOMA</b>⎦</span>
+            <em class="time">1 hour ago<i class="icon-thumb-down-1"></i></em>
+          </a>
+        </li>
+
+
+      </ul>
+
+      <i class="icon-cancel-1"></i>
+    </div> <!--[End] .noti-panel  -->
+
+    <main class="articles-panel">
+      <h1 class="off">main article list</h1>
+
+
+          <article class="article-list">
+
+            <div class="article-info">
+              <img src="_0mado.jpg" alt="" />
+              <em class="publisher">Mado</em>
+              <span class="time">1 hour ago</span>
+
+              <i class="icon-more-1">
+                <div class="article-setting-panel">
+                  <i class="icon-edit-1">edit</i>
+                  <i class="icon-delete-3">delete</i>
+                </div>
+              </i>
+
+            </div>
+
+            <div class="article-content">
+              <h3 class="article-subject">Lorem ipsum dolor sit amet, consectetur...</h3>
+              <p class="article-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sin
+                <span>...more</span>
+              </p>
+            </div>
+
+            <div class="comment-panel">
+              <i class="icon-comment-o-2"> <span class="count">0</span></i>
+              <i class="icon-thumb-down-2"> <span class="count">10</span></i>
+              <i class="icon-thumb-up-2"> <span class="count">20</span></i>
+            </div>
+
+            <div class="comment-content">
+              <ul class="comment-list">
+              </ul>
+              <input type="text" name="reply" class="reply" placeholder="REPLY">
+            </div>
+          </article> <!-- 1 -->
+
+          <article class="article-list">
+
+            <div class="article-info">
+              <img src="_0mado.jpg" alt="" />
+              <em class="publisher">MM</em>
+              <span class="time">2 hour ago</span>
+
+            </div>
+
+            <div class="article-content">
+              <h3 class="article-subject">這不是Mado</h3>
+              <p class="article-description">
+                  這不是Mado所以右上角沒有...，字不夠多也不會有...more，留言數有超過1就會換圖。
+
+              </p>
+            </div>
+
+            <div class="comment-panel">
+              <i class="icon-comments"> <span class="count">3</span></i>
+              <i class="icon-thumb-down-2"> <span class="count">10</span></i>
+              <i class="icon-thumb-up-2"> <span class="count">20</span></i>
+            </div>
+
+            <div class="comment-content">
+              <ul class="comment-list">
+                <li>
+                  <img src="_0mado.jpg" alt="" />
+                  <em class="reply-author">MM<b> :</b></em>
+                  <p class="description">why this is not mado?</p>
+                  <span class="time">1 hour ago</span>
+                </li>
+                <li>
+                  <img src="_0mado.jpg" alt="" />
+                  <em class="reply-author">MM<b> :</b></em>
+                  <p class="description">why this is not mado?</p>
+                  <span class="time">1 hour ago</span>
+                </li>
+                <li>
+                  <img src="_0mado.jpg" alt="" />
+                  <em class="reply-author">MM<b> :</b></em>
+                  <p class="description">why this is not mado?</p>
+                  <span class="time">1 hour ago</span>
+                </li>
+              </ul>
+              <input type="text" name="reply" class="reply" placeholder="REPLY">
+            </div>
+          </article> <!-- 2 -->
+
+
+    </main> <!-- [End] .articles-panel -->
+
+
   </div> <!--[End] .wrapper-->
   </div> <!--[End] #app-->
   <script>
@@ -86,36 +326,36 @@
 //      this.scrollTop = 0;
       LoginiconPos();
     }, false);
-    
+
     window.addEventListener('load', function() {
       this.scrollTop = 0;
       console.log(this.scrollTop);
       LoginiconPos();
     }, false);
 
-    
+
     function LoginiconPos() {
       var $fccLoginMainpage = document.querySelector('.fcc-login-mainpage').clientWidth;
       var eyeC = document.querySelector('.icon-eye-closed-1');
       var eyeO = document.querySelector('.icon-eye-opened-1');
-      
-      
+
+
         if($fccLoginMainpage < 360) {
           if(eyeC) {
-          eyeC.style.right = ((($fccLoginMainpage) - 245)/2) + 'px';  
+          eyeC.style.right = ((($fccLoginMainpage) - 245)/2) + 'px';
           } else {
-          eyeO.style.right = ((($fccLoginMainpage) - 245)/2) + 'px';  
+          eyeO.style.right = ((($fccLoginMainpage) - 245)/2) + 'px';
           }
         } else {
             if(eyeC) {
-              eyeC.style.right = 58 + 'px';  
+              eyeC.style.right = 58 + 'px';
             } else {
-              eyeO.style.right = 58 + 'px';  
+              eyeO.style.right = 58 + 'px';
             }
         }
     }
-    
-    
+
+
   </script>
 <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
 </body>
